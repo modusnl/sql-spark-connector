@@ -2,11 +2,11 @@ name := "spark-mssql-connector"
 
 organization := "com.microsoft.sqlserver.jdbc.spark"
 
-version := "1.0.1"
+version := "1.1.1"
 
 scalaVersion := "2.12.11"
 ThisBuild / useCoursier := false
-val sparkVersion = "3.0.1"
+val sparkVersion = "3.1.1"
 
 javacOptions ++= Seq("-source", "1.8", "-target", "1.8", "-Xlint")
 
