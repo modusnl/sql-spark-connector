@@ -2,11 +2,11 @@ name := "spark-mssql-connector"
 
 organization := "com.microsoft.sqlserver.jdbc.spark"
 
-version := "1.0.0"
+version := "1.0.1"
 
 scalaVersion := "2.12.11"
 ThisBuild / useCoursier := false
-val sparkVersion = "3.0.0"
+val sparkVersion = "3.0.1"
 
 javacOptions ++= Seq("-source", "1.8", "-target", "1.8", "-Xlint")
 
@@ -23,7 +23,7 @@ libraryDependencies ++= Seq(
   "com.novocode" % "junit-interface" % "0.11" % "test",
 
   //SQLServer JDBC jars
-  "com.microsoft.sqlserver" % "mssql-jdbc" % "8.2.1.jre8"
+  "com.microsoft.sqlserver" % "mssql-jdbc" % "8.4.1.jre8"
 )
 
 scalacOptions := Seq("-unchecked", "-deprecation", "evicted")
